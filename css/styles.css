@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background-color: #5D001E;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: white;
+    color: #5D001E;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Dancing Script', cursive;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.content {
+    background-color: #5D001E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.romantic-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.music-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-content audio {
+    margin-top: 20px;
+}
+
+/* Media query para iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 12px 25px;
+    }
+}
